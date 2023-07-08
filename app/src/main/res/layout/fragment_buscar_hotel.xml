@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.buscarhotel.BuscarHotelFragment">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/txtdDestino"
+        android:layout_width="358dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:hint="Destino"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+    <Spinner
+        android:id="@+id/spTipoHabitacion"
+        android:layout_width="355dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtdDestino" />
+
+    <EditText
+        android:id="@+id/txtFechaInicio"
+        android:layout_width="165dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Fecha Inicio"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spTipoHabitacion" />
+
+    <EditText
+        android:id="@+id/txtFechaFin"
+        android:layout_width="166dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Fecha Fin"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toEndOf="@+id/txtFechaInicio"
+        app:layout_constraintTop_toBottomOf="@+id/spTipoHabitacion" />
+
+    <Button
+        android:id="@+id/btnBuscarHotel"
+        android:layout_width="132dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:text="Buscar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/txtFechaInicio" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
