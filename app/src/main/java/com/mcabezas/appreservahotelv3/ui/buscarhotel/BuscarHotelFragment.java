@@ -44,16 +44,13 @@ public class BuscarHotelFragment extends Fragment {
         btnBuscarHotel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*
+
                 String destino = txtdDestino.getText().toString();
                 String fechaInicio = txtFechaInicio.getText().toString();
                 String fechaFin = txtFechaFin.getText().toString();
-                String tipoHabitacion = spTipoHabitacion.getSelectedItem().toString();
-                 */
-                String destino = "destino de prueba";
-                String fechaInicio = "fechaInicio de prueba";
-                String fechaFin = "fechaFin de prueba";
-                String tipoHabitacion = "tipoHabitacion de prueba";
+                //String tipoHabitacion = spTipoHabitacion.getSelectedItem().toString();
+
+                 String tipoHabitacion = "tipoHabitacion de prueba";
 
                 ListarHotelesFragment listarHotelesFragment = new ListarHotelesFragment();
 
